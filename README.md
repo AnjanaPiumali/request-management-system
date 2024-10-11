@@ -1,4 +1,4 @@
-# request-m# Request Management System
+ Request Management System
 
 ## Project Overview
 This is a full-stack request management system built using the MERN (MongoDB, Express, React, Node.js) stack and TypeScript. It allows users to create, edit, delete, and view requests. The system supports filters for status and department and includes a fully responsive UI.
@@ -15,7 +15,7 @@ This is a full-stack request management system built using the MERN (MongoDB, Ex
 1. Clone the repository:
    ```bash
    git clone https://github.com/AnjanaPiumali/request-management-system.git
-   cd request-management-system
+   
 anagement-system
 
 2. Install dependencies:
