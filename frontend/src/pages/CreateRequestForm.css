@@ -1,0 +1,127 @@
+/* Form Container */
+.request-form {
+    width: 100%;
+    max-width: 600px; /* Medium size form */
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    box-sizing: border-box;
+    overflow-y: auto; /* Allows scrolling when form content overflows */
+    max-height: 80vh; /* Ensures the form is limited to the viewport height */
+    display: flex;
+    flex-direction: column; /* Ensures the form contents align properly */
+    justify-content: space-between;
+  }
+  
+  /* Ensure the form takes up at least the full height of the viewport */
+  body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    overflow: hidden; /* Prevents page overflow and limits to viewport height */
+  }
+  
+  .request-form h2 {
+    text-align: left;
+    margin-bottom: 20px;
+  }
+  
+  /* Form Fields */
+  .request-form label {
+    display: block;
+    margin-bottom: 10px;
+  }
+  
+  .request-form input,
+  .request-form select {
+    width: 100%; /* Make inputs and selects the same width */
+    padding: 10px;
+    font-size: 16px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box; /* Ensures padding is included in width calculation */
+  }
+  
+  /* Form Buttons */
+  .form-buttons {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+  }
+  
+  /* Button Styles */
+  .submit-btn,
+  .cancel-btn {
+    width: 48%;
+    padding: 10px;
+    font-size: 16px;
+    background-color:#830c08;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .cancel-btn {
+    background-color: #6c757d;
+  }
+  
+  .submit-btn:hover,
+  .cancel-btn:hover {
+    opacity: 0.9;
+  }
+  
+  /* Ensure responsiveness on smaller screens */
+  @media (max-width: 768px) {
+    .request-form {
+      padding: 15px; /* Reduced padding on smaller screens */
+      max-height: 100vh; /* Ensures the form stays within the viewport */
+    }
+  
+    /* Stack buttons vertically on mobile */
+    .form-buttons {
+      flex-direction: column;
+    }
+  
+    .submit-btn,
+    .cancel-btn {
+      width: 100%;
+      margin-bottom: 10px; /* Spacing between buttons */
+    }
+  
+    /* Adjust font size for input/select fields on mobile */
+    .request-form input,
+    .request-form select {
+      font-size: 14px; /* Smaller font size for better readability on small screens */
+      padding: 8px; /* Reduced padding for mobile */
+    }
+  }
+  
+  /* For screens wider than 768px, adjust for desktop layout */
+  @media (min-width: 769px) {
+    .request-form {
+      padding: 20px;
+      max-width: 700px; /* Increase form size on larger screens */
+    }
+  
+    .submit-btn,
+    .cancel-btn {
+      width: 48%; /* Keep buttons side by side */
+      margin-bottom: 0; /* Remove margin between buttons */
+    }
+  
+    .form-buttons {
+      display: flex;
+      justify-content: space-between;
+    }
+  
+    .request-form input,
+    .request-form select {
+      font-size: 16px; /* Default font size for desktop */
+      padding: 10px; /* Default padding for desktop */
+    }
+  }
+  
